@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "appController.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -16,9 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
     
+    
+    
+    [appController sharedApp];
+     
     // Override point for customization after application launch.
     
     //TestViewController *test = [[TestViewController alloc]     initWithNibName:@"TestViewController" bundle:nil];

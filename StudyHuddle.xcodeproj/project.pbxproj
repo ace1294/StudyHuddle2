@@ -12,6 +12,12 @@
 		966A065919FC35D100C6C82D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966A065819FC35D100C6C82D /* Images.xcassets */; };
 		966A065C19FC35D100C6C82D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 966A065A19FC35D100C6C82D /* LaunchScreen.xib */; };
 		966A066819FC35D100C6C82D /* StudyHuddleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A066719FC35D100C6C82D /* StudyHuddleTests.m */; };
+		966A067719FC542100C6C82D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 966A067619FC542100C6C82D /* Podfile */; };
+		966A06A719FC57C200C6C82D /* appController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A06A619FC57C200C6C82D /* appController.m */; };
+		966A06AA19FC591100C6C82D /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A06A919FC591100C6C82D /* UserData.m */; };
+		966A06AD19FC591D00C6C82D /* Assignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A06AC19FC591D00C6C82D /* Assignment.m */; };
+		966A06B019FC593500C6C82D /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A06AF19FC593500C6C82D /* Course.m */; };
+		966A06B319FC594600C6C82D /* StudyLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A06B219FC594600C6C82D /* StudyLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,18 @@
 		966A066119FC35D100C6C82D /* StudyHuddleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyHuddleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		966A066619FC35D100C6C82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		966A066719FC35D100C6C82D /* StudyHuddleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyHuddleTests.m; sourceTree = "<group>"; };
+		966A067619FC542100C6C82D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		966A06A519FC57C200C6C82D /* appController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appController.h; sourceTree = "<group>"; };
+		966A06A619FC57C200C6C82D /* appController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = appController.m; sourceTree = "<group>"; };
+		966A06A819FC591100C6C82D /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		966A06A919FC591100C6C82D /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		966A06AB19FC591D00C6C82D /* Assignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assignment.h; sourceTree = "<group>"; };
+		966A06AC19FC591D00C6C82D /* Assignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assignment.m; sourceTree = "<group>"; };
+		966A06AE19FC593500C6C82D /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		966A06AF19FC593500C6C82D /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		966A06B119FC594600C6C82D /* StudyLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyLog.h; sourceTree = "<group>"; };
+		966A06B219FC594600C6C82D /* StudyLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyLog.m; sourceTree = "<group>"; };
+		966A06B419FC5D5700C6C82D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 		966A063C19FC35D100C6C82D = {
 			isa = PBXGroup;
 			children = (
+				966A067619FC542100C6C82D /* Podfile */,
 				966A064719FC35D100C6C82D /* StudyHuddle */,
 				966A066419FC35D100C6C82D /* StudyHuddleTests */,
 				966A064619FC35D100C6C82D /* Products */,
@@ -76,9 +95,11 @@
 		966A064719FC35D100C6C82D /* StudyHuddle */ = {
 			isa = PBXGroup;
 			children = (
-				966A067519FC4AE300C6C82D /* Views */,
 				966A064C19FC35D100C6C82D /* AppDelegate.h */,
 				966A064D19FC35D100C6C82D /* AppDelegate.m */,
+				966A067519FC4AE300C6C82D /* Views */,
+				966A06A219FC56A800C6C82D /* Classes */,
+				966A06A419FC56BB00C6C82D /* Controllers */,
 				966A065819FC35D100C6C82D /* Images.xcassets */,
 				966A067119FC36D700C6C82D /* Images */,
 				966A064819FC35D100C6C82D /* Supporting Files */,
@@ -91,6 +112,7 @@
 			children = (
 				966A064919FC35D100C6C82D /* Info.plist */,
 				966A064A19FC35D100C6C82D /* main.m */,
+				966A06B419FC5D5700C6C82D /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -149,6 +171,30 @@
 				966A065A19FC35D100C6C82D /* LaunchScreen.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		966A06A219FC56A800C6C82D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				966A06A519FC57C200C6C82D /* appController.h */,
+				966A06A619FC57C200C6C82D /* appController.m */,
+				966A06A819FC591100C6C82D /* UserData.h */,
+				966A06A919FC591100C6C82D /* UserData.m */,
+				966A06AB19FC591D00C6C82D /* Assignment.h */,
+				966A06AC19FC591D00C6C82D /* Assignment.m */,
+				966A06AE19FC593500C6C82D /* Course.h */,
+				966A06AF19FC593500C6C82D /* Course.m */,
+				966A06B119FC594600C6C82D /* StudyLog.h */,
+				966A06B219FC594600C6C82D /* StudyLog.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		966A06A419FC56BB00C6C82D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966A067719FC542100C6C82D /* Podfile in Resources */,
 				966A065C19FC35D100C6C82D /* LaunchScreen.xib in Resources */,
 				966A065919FC35D100C6C82D /* Images.xcassets in Resources */,
 			);
@@ -250,7 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966A06B319FC594600C6C82D /* StudyLog.m in Sources */,
 				966A064E19FC35D100C6C82D /* AppDelegate.m in Sources */,
+				966A06A719FC57C200C6C82D /* appController.m in Sources */,
+				966A06AA19FC591100C6C82D /* UserData.m in Sources */,
+				966A06AD19FC591D00C6C82D /* Assignment.m in Sources */,
+				966A06B019FC593500C6C82D /* Course.m in Sources */,
 				966A064B19FC35D100C6C82D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +419,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Jason/Documents/Study,
+					Huddle/NewCode,
+				);
 				INFOPLIST_FILE = StudyHuddle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -377,6 +434,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Jason/Documents/Study,
+					Huddle/NewCode,
+				);
 				INFOPLIST_FILE = StudyHuddle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +498,7 @@
 				966A066D19FC35D100C6C82D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		966A066E19FC35D100C6C82D /* Build configuration list for PBXNativeTarget "StudyHuddleTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +507,7 @@
 				966A067019FC35D100C6C82D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
